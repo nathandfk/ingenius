@@ -6,6 +6,8 @@
     
     $products = wc_get_product($id); 
     echo $products;
+    $size = $products->default_attributes->pa_tailles;
+    $support = $products->default_attributes->pa_support;
 
 ?>
 
@@ -55,22 +57,20 @@
                 </p>
 
                 <div class="tabloid-price">
-                    138 €
+                <?php echo $products->price; ?> €
                 </div>
+
 
                 <div class="tabloide-size">
                     <h2 class="tabloide-sizez-title size18">Tailles</h2>
+                    
                     <div class="tabloide-size-display tabloide-bull-display">
-                        <div class="tabloide-bull tabloide-bull-size">XS</div>
+                        <div class="tabloide-bull tabloide-bull-size default-attributes">XS</div>
                         <div class="tabloide-bull tabloide-bull-size">S</div>
                         <div class="tabloide-bull tabloide-bull-size">M</div>
                         <div class="tabloide-bull tabloide-bull-size">L</div>
                         <div class="tabloide-bull tabloide-bull-size">XL</div>
-                        <?php 
-                            // foreach ($sizes as $size) {
-                            //     echo '<div class="tabloide-bull tabloide-bull-size">'.$size.'</div>';
-                            // }
-                        ?>
+                        
                     </div>
                 </div>
                 <p class="tabloide-size-guid">
@@ -80,13 +80,8 @@
                 <div class="tabloide-support">
                     <h2 class="tabloide-support-title size18">Support</h2>
                     <div class="tabloide-support-display tabloide-bull-display">
-                        <div class="tabloide-bull tabloide-bull-support "></div>
                         <div class="tabloide-bull tabloide-bull-support"></div>
-                        <?php 
-                            // foreach ($suppports as $support) {
-                            //     echo '<div class="tabloide-bull tabloide-bull-support">'.$support.'</div>';
-                            // }
-                        ?>
+                        <div class="tabloide-bull tabloide-bull-support"></div>
                     </div>
                 </div>
 

@@ -110,3 +110,8 @@ Requires at least: 5.9
 .cp{
     cursor: pointer;
 }
+.default-attributes{
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
