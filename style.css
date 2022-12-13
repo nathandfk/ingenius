@@ -1,0 +1,115 @@
+/*
+Theme Name: Ingenius
+Theme URI: https://ingenius.agency
+Author: the WordPress team
+Author URI: https://ingenius.agency
+Description: 
+Requires at least: 5.9
+
+*/
+@font-face {
+    font-family: poppins;
+    src: url("./fonts/Poppins-Light.ttf");
+}
+*{
+    font-family: poppins;
+}
+.form-col-2 h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.tabloide-upload-file{
+    border: 1px solid rgba(0, 0, 0, 20%);
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.form-col-1 > img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.tabloid-price{
+    font-size: 40px;
+}
+.tabloide-upload-icon, .tabloide-upload-validator{
+    width: 40px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.tabloide-upload-inner{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    -ms-gap: 1rem;
+    -moz-gap: 1rem;
+    -webkit-gap: 1rem;
+    -o-gap: 1rem;
+}
+
+.form-col-1{
+    width: 100%;
+}
+.tab-form-col{
+    display: grid;
+    grid-template: auto/1fr 1fr;
+    gap: 3rem;
+    -ms-gap: 3rem;
+    -moz-gap: 3rem;
+    -webkit-gap: 3rem;
+    -o-gap: 3rem;
+}
+.tabloide-bull{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tabloide-bull-display{
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+}
+
+.click{
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    margin: 10px 0px;
+}
+.click-dark{
+    background-color: #3A393E;
+    color: white;
+}
+
+.size18{
+    font-size: 18px;
+}
+
+.size20{
+    font-size: 20px;
+}
+.red-color{
+    color: red;
+}
+.d-none{
+    display: none;
+}
+.bg-bw{
+    background: url("./pictures/tabbw.png");
+    background-size: contain;
+}
+.cp{
+    cursor: pointer;
+}
+.tabloide-size-guid{
+    
+}
