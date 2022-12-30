@@ -1,0 +1,41 @@
+// $good = "https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg";
+// $blur="https://assets.afcdn.com/album/D20140207/0_uplfrm_photo-2_H114829_L_w200h267.webp";
+// $nudity = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Pro-Nudity_Rally.jpg/640px-Pro-Nudity_Rally.jpg";
+// $perso = new Perso();
+// echo '<pre>';
+// $uploaddir = WP_CONTENT_DIR.'/uploads/personalized/';
+// $pic = $uploaddir."350709_medical-equipment-high-tech.jpg";
+// $data = $perso->api($good, false);
+// print_r($data);
+// echo '</pre>';
+// die();
+
+<!-- 
+
+require_once (get_theme_file_path("vendor/autoload.php"));
+use Fpdf\Fpdf;
+
+if (isset($_GET['picture']) && isset($_GET['position'])) {
+    if (!empty($_GET['picture'])) {
+        if (filter_var($_GET['picture'], FILTER_VALIDATE_URL)){
+
+            $image = $_GET['picture'];
+            $size = array(140,110);
+            $orientation = "L";
+            $w = 100;
+            $h = 70;
+            if ($_GET['position'] == "portrait") {
+                $size = array(110,140);
+                $orientation = "P";
+                $w = 70;
+                $h = 100;
+            }
+            $pdf = new Fpdf($orientation, 'cm', $size);
+            $pdf->AddPage();
+            $pdf->Image($image, 20, 20, $w, $h);
+            $pdf->Output('D', 'personalized-file.pdf');
+            // echo $pdf;
+        }
+    }
+} -->
+
